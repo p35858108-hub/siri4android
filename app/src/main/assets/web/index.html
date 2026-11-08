@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Siri</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="gl"></div>
+
+  <div id="island" data-state="bubble">
+    <div id="head"></div>
+    <div id="answer"></div>
+    <div id="composer">
+      <textarea id="input" rows="1" placeholder="Pregunta algo…" enterkeyhint="send" autocomplete="off" autocapitalize="sentences"></textarea>
+      <button id="send" aria-label="Enviar" disabled>
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 19V6M6 11l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <script src="three.min.js"></script>
+  <script src="siri.js"></script>
+</body>
+</html>
